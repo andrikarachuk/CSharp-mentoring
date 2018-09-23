@@ -13,16 +13,25 @@ namespace Task_3
             string c;
             Console.Write("Write character in Upper or Lower case: ");
             c = Console.ReadLine();
-            c.GetHashCode();
+            string[] arrCharLC = new string[] { "a", "e", "i", "o", "u" };
+            string[] arrCharUC = new string[] { "A", "E", "I", "O", "U" };
             bool b;
-
-            b = c.ToUpper().GetHashCode() == c.GetHashCode();
-            if (b)
+            
+            if(b = int.TryParse(c, out int i))
             {
-                Console.WriteLine("1");
-            } else
+                Console.WriteLine("Inputed symbol is a digit");
+            }
+            else if (b = arrCharLC.Contains(c))
             {
-                Console.WriteLine(2);
+                Console.WriteLine("Inputed symbol is a lowercase vowel");
+            }
+            else if (b = arrCharUC.Contains(c))
+            {
+                Console.WriteLine("Inputed symbol is a uppercase vowel");
+            }
+            else
+            {
+                Console.WriteLine("Inputed symbol is any other symbol");
             }
 
             Console.ReadKey();

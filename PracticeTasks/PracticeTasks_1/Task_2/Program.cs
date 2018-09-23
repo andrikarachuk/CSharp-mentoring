@@ -10,13 +10,14 @@ namespace Task_2
     {
         static void Main(string[] args)
         {
-            Random r = new Random();
-            int y = r.Next(-5, 5);
             int x;
 
-            x = y ^ 2 + 2 * y + 1;
-
-            Console.WriteLine(y);
+            for (int y = -5; y <= 5; y++)
+            {
+                
+                x = y ^ 2 + 2 * y + 1;
+                Console.WriteLine("For y = {0}, x = {1}", y, x);
+            }
 
             Console.ReadLine();
         }
