@@ -10,25 +10,24 @@ namespace Task_3
     {
         static void Main(string[] args)
         {
-            string c;
             Console.Write("Write character in Upper or Lower case: ");
-            c = Console.ReadLine();
-            string[] arrCharLC = new string[] { "a", "e", "i", "o", "u" };
-            string[] arrCharUC = new string[] { "A", "E", "I", "O", "U" };
+            var c = char.Parse(Console.ReadLine());
+            char[] arrCharLC = new char[] { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
 
-            bool b;
-            
-            if(b = int.TryParse(c, out int i)) 
+            if(char.IsDigit(c)) 
             {
                 Console.WriteLine("Inputed symbol is a digit");
             }
-            else if (b = arrCharLC.Contains(c))
+            else if (arrCharLC.Contains(c))
             {
+                if (char.IsLower(c))
+                {
                 Console.WriteLine("Inputed symbol is a lowercase vowel");
-            }
-            else if (b = arrCharUC.Contains(c))
-            {
-                Console.WriteLine("Inputed symbol is a uppercase vowel");
+                }
+                else
+                {
+                    Console.WriteLine("Inputed symbol is a uppercase vowel");
+                }
             }
             else
             {
@@ -39,13 +38,13 @@ namespace Task_3
         }
 
         // Problems:
-        // 1. It is better to create one array of characters instead of two arrays of strings.
-        // 2. Use char.isLower and char.isUpper in order to reduce the number of if-else blocks and to have 1 array with vowels
+        // 1. It is better to create one array of characters instead of two arrays of strings. -> Checked
+        // 2. Use char.isLower and char.isUpper in order to reduce the number of if-else blocks and to have 1 array with vowels  -> Checked
 
         // What can be improved:
-        // 1. Statements from rows 13 and 15 can be written in one statement i.e. variable declaration and initialization
-        // 2. You can use var
-        // 3. "Var b" is not needed => you should write "arrCharLC.Contains(c)" instead of "b = arrCharLC.Contains(c)"
-        // 4. It's better to use char.IsDigit instead of int.TryParse(c, out int i)
+        // 1. Statements from rows 13 and 15 can be written in one statement i.e. variable declaration and initialization -> Checked
+        // 2. You can use var -> Checked
+        // 3. "Var b" is not needed => you should write "arrCharLC.Contains(c)" instead of "b = arrCharLC.Contains(c)" -> Checked
+        // 4. It's better to use char.IsDigit instead of int.TryParse(c, out int i) -> Checked
     }
 }

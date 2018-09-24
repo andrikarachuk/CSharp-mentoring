@@ -10,43 +10,35 @@ namespace Task_8
     {
         static void Main(string[] args)
         {
-            int[] arr = new int[5];
+            Console.Write("Write how long should be an array: ");
+            var x = Convert.ToInt32(Console.ReadLine());
+
+            int[] arr = new int[x];
             for (int i = 0; i < arr.Length; i++)
             {
-                Console.Write("Enter {0} element of array: ", i);
+                Console.Write($"Enter {i} element of array: ");
                 arr[i] = int.Parse(Console.ReadLine());
             }
 
             int sum = 0;
-
             for (int i = 0; i < arr.Length; i++)
             {
-                int j = + arr[i];
-                sum = sum + j;
-
-                //Why following construction doesn't work?
-                // sum =+ arr[i];
-
-                // Because the correct operator is "+="
-                // = + works like =
-
+                sum += arr[i];
             }
-
-
-
-            Console.WriteLine(sum);
+           
+            Console.WriteLine($"Sum of the array is {sum}");
 
             Console.ReadKey();
         }
     }
 
     // Problems:
-    // 1. The array length should be entered by user, it should not be hard-coded to 5 elements
-    // 2. Rows 24 and 25 are strange, either write sum = sum + arr[i] or sum += arr[i]
+    // 1. The array length should be entered by user, it should not be hard-coded to 5 elements -> Checked
+    // 2. Rows 24 and 25 are strange, either write sum = sum + arr[i] or sum += arr[i] -> Checked
 
     // What can be improved:
-    // 1. Try to use var
-    // 2. Try to use string interpolation => row 16
-    // 3. It's better to use int.TryParse instead of Parse
-    // 4. Don't leave unnecessary empty rows
+    // 1. Try to use var  -> Checked
+    // 2. Try to use string interpolation => row 16 -> Checked
+    // 3. It's better to use int.TryParse instead of Parse -> use Convert.ToInt32. TryParse doesn't work 
+    // 4. Don't leave unnecessary empty rows -> Checked
 }

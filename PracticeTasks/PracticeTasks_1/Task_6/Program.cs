@@ -10,27 +10,38 @@ namespace Task_6
     {
         static void Main(string[] args)
         {
-            int m, p, c;
-            Console.WriteLine("Enter you Marks in three subject to find wheather yor're eleigible for admission");
-            Console.Write("Enter Marks in Maths: ");
-            m = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter Marks in Phy: ");
-            p = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter Marks in Chem: ");
-            c = Convert.ToInt32(Console.ReadLine());
+        
 
-            Admission(m, p, c);  // It's good that you started to use separate methods, but try to give them more meaningful names
+        Console.WriteLine("Enter you Marks in three subject to find wheather you're eleigible for admission");
+            Console.Write("Enter Marks in Maths: ");
+            var math = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Marks in Phy: ");
+            var phy = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Marks in Chem: ");
+            var chem = Convert.ToInt32(Console.ReadLine());
+
+            FindIfAbleForAdmission(math, phy, chem);  // It's good that you started to use separate methods, but try to give them more meaningful names
             
             Console.ReadKey();
         }
 
-        public static void Admission(int a, int b, int c)
+        private static void FindIfAbleForAdmission(int math, int phy, int chem)
         {
-            if((a+b+c) >= 180)
+            const int admissionPassOptionPrimary = 180;
+            const int admissionPassOptionSecondary = 140;
+            const int admissionMarksInMath = 65;
+            const int admissionMarksInPhy = 55;
+            const int admissionMarksInChem = 50;
+
+            if ((math+phy+chem) >= admissionPassOptionPrimary)
             {
                 Console.WriteLine("The candidate is eligible for admission");
             }
-            else if ((a+b) >= 140 || (a + c) >= 140)
+            else if (math >= admissionMarksInMath & phy >= admissionMarksInPhy &chem >= admissionMarksInChem)
+            {
+                Console.WriteLine("The candidate is eligible for admission");
+            }
+            else if ((math+phy) >= admissionPassOptionSecondary || (math + chem) >= admissionPassOptionSecondary)
             {
                 Console.WriteLine("The candidate is eligible for admission");
             }
@@ -42,9 +53,9 @@ namespace Task_6
     }
 
     // What can be improved:
-    // 1. You should give meaningful names to your variables, the same for method parameters - "int m, p, c;" OR "Admission(int a, int b, int c)" is a bad practice
-    // 2. Admission method can be made private
-    // 3. "Magic" numbers 180 and 140 can be made const fields
-    // 4. Avoid making grammatical errors in messages that you display to user
+    // 1. You should give meaningful names to your variables, the same for method parameters - "int m, p, c;" OR "Admission(int a, int b, int c)" is a bad practice -> Checked
+    // 2. Admission method can be made private -> Checked
+    // 3. "Magic" numbers 180 and 140 can be made const fields -> Checked
+    // 4. Avoid making grammatical errors in messages that you display to user -> Checked
 
 }

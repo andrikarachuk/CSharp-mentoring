@@ -11,13 +11,10 @@ namespace PracticeTasks_1
         static void Main(string[] args)
         {
             char[] array = new char[3] { 'b', 'a', 't' };
+            char[] arrTemp = new char[array.Length];   // [Originally row 20] Attention: 3 arrTemp arrays are created as a result of this loop -> Checked
 
-            int arrayLength = array.Length;
-
-            for (int i = arrayLength - 1, j = 0; i >= 0; i--, j++)  // Cool! I haven't known that each "for" loop section can have several statements
+            for (int i = array.Length - 1, j = 0; i >= 0; i--, j++)  // Cool! I haven't known that each "for" loop section can have several statements
             {
-
-                char[] arrTemp = new char[arrayLength];   // Attention: 3 arrTemp arrays are created as a result of this loop
                 arrTemp[j] = array[i];
 
                 Console.Write(arrTemp[j]);
@@ -29,10 +26,10 @@ namespace PracticeTasks_1
 
         // What can be improved:
 
-        // 1. You can use var keyword; 
-        // 2. arrayLength var is not needed
+        // 1. You can use var keyword;  -> ??unable to use
+        // 2. arrayLength var is not needed -> Checked
 
         // Problems:
-        // 1. See comment in row 20
+        // 1. See comment in row 20 -> Checked
     }
 }

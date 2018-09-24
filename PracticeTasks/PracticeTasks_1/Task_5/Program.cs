@@ -10,30 +10,34 @@ namespace Task_5
     {
         static void Main(string[] args)
         {
-            int a, b, c;
             Console.Write("Enter first digit: ");
-            a = Convert.ToInt32(Console.ReadLine());
+            var a = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter second digit: ");
-            b = Convert.ToInt32(Console.ReadLine());
+            var b = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter third digit: ");
-            c = Convert.ToInt32(Console.ReadLine());
+            var c = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("The greatest digit among three is {0}", FindMax(a, b, c));
+            Console.Write($"The greatest digit among three is {FindMax(a, b, c)}");
             Console.ReadKey();
         }
 
-        public static int FindMax(int a, int b, int c)
+        private static int FindMax(int a, int b, int c)
         {
             int[] whereMax = new int[] {a, b, c};
-            return whereMax.Max();
+            int max = whereMax[0];
+            for (int i = 0; i < whereMax.Length-1; i++)
+            {
+                max = (whereMax[i] > whereMax[i + 1]) ? whereMax[i] : whereMax[i + 1];
+            }
+            return max; 
         }
     }
 
     // What can be improved:
-    // 1. Method FindMax can be made private
-    // 2. You can combine variable definition and initialization - rows 13, 15, 17, 19
-    // 3. You can use string interpolation - row 21
+    // 1. Method FindMax can be made private -> Checked
+    // 2. You can combine variable definition and initialization - rows 13, 15, 17, 19 -> Checked
+    // 3. You can use string interpolation - row 21 -> Checked
 
     // Things to do:
-    // 1. You can try to implement finding max number in array on your own
+    // 1. You can try to implement finding max number in array on your own -> Checked
 }
