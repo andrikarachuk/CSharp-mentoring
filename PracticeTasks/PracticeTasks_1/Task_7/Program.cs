@@ -44,4 +44,11 @@ namespace Task_7
             }
         }
     }
+
+    // What can be improved:
+    // 1. Try to give meaningful names to local variables, method names and method parameters => e.g. "Grade, s," are bad names
+    // 2. You can combine variable declarationa and initialization - rows 13 and 15
+    // 3. Method Grade has 2 responsibilities, it's better to make it responsible only for string description determination
+    // 4. Try to use short type names if they exist, e.g. string instead of String
+    // 5. Method Grade can be made private
 }

@@ -19,7 +19,7 @@ namespace Task_6
             Console.Write("Enter Marks in Chem: ");
             c = Convert.ToInt32(Console.ReadLine());
 
-            Admission(m, p, c);
+            Admission(m, p, c);  // It's good that you started to use separate methods, but try to give them more meaningful names
             
             Console.ReadKey();
         }
@@ -40,4 +40,11 @@ namespace Task_6
             }
         }
     }
+
+    // What can be improved:
+    // 1. You should give meaningful names to your variables, the same for method parameters - "int m, p, c;" OR "Admission(int a, int b, int c)" is a bad practice
+    // 2. Admission method can be made private
+    // 3. "Magic" numbers 180 and 140 can be made const fields
+    // 4. Avoid making grammatical errors in messages that you display to user
+
 }
