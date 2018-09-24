@@ -28,4 +28,12 @@ namespace Task_5
             return whereMax.Max();
         }
     }
+
+    // What can be improved:
+    // 1. Method FindMax can be made private
+    // 2. You can combine variable definition and initialization - rows 13, 15, 17, 19
+    // 3. You can use string interpolation - row 21
+
+    // Things to do:
+    // 1. You can try to implement finding max number in array on your own
 }

@@ -10,7 +10,7 @@ namespace Task_2
     {
         static void Main(string[] args)
         {
-            int x;
+            int x;  
 
             for (int y = -5; y <= 5; y++)
             {
@@ -20,6 +20,13 @@ namespace Task_2
             }
 
             Console.ReadLine();
+
+            // Problems:
+            // 1. x is incorrectly calculated (Hint: problem is with ^ operator)
+
+            // What can be improved:
+            // 1. "x" can be declared in for loop
+            // 2. You can use string interpolation in row 19 - $"{}"
         }
     }
 }

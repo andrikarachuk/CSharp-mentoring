@@ -27,5 +27,9 @@ namespace Task_4
 
             Console.ReadKey();
         }
+
+        // What can be improved:
+        // 1. Row 13 is redundant, it can be combined with rows 15 and 17 => var a = Convert.ToInt32(Console.ReadLine());
+        // 2. Try to use ?: operator instead of if-else block
     }
 }
