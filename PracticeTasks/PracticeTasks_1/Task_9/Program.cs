@@ -36,5 +36,14 @@ namespace Task_9
             }
             return max;
         }
+
+        // Problems:
+        // 1. "int[] whereMax" variable is redundant
+        // 2. Iteration i=0 is redundant
+
+        // What can be improved:
+        // 1. Try to use var
+        // 2. Try to use int.TryParse instead of Parse
+
     }
 }

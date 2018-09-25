@@ -58,4 +58,9 @@ namespace Task_6
     // 3. "Magic" numbers 180 and 140 can be made const fields -> Checked
     // 4. Avoid making grammatical errors in messages that you display to user -> Checked
 
+    // Some comments:
+    // 1. Formatting - code is not aligned, unnecessary empty lines
+    // 2. Spelling errors - see row 15
+    // 3. It's better to create const class fields instead of const local variables
+
 }
