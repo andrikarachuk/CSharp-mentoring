@@ -41,4 +41,9 @@ namespace Task_8
     // 2. Try to use string interpolation => row 16 -> Checked
     // 3. It's better to use int.TryParse instead of Parse -> use Convert.ToInt32. TryParse doesn't work 
     // 4. Don't leave unnecessary empty rows -> Checked
+
+    // Some comments:
+    // 1. Still a lot of places where you can use var :)
+    // 2. From existing code you can extract several methods -> ArrayPopulation - separate method, ArraySum - separate method
+
 }

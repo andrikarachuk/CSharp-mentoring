@@ -40,4 +40,8 @@ namespace Task_5
 
     // Things to do:
     // 1. You can try to implement finding max number in array on your own -> Checked
+
+    // Some comments:
+    // 1. Try to use var
+    // 2. In your algorithm in FindMax method it's enough to start "for" loop with i=1
 }

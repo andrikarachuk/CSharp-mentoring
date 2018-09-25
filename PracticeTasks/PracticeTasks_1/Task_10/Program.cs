@@ -27,11 +27,21 @@ namespace Task_10
         }
         private static void ReverseAnArray(int[] arr)
         {
-            for (int i = arr.Length-1; i >= 0; i--)
+            for (int i = arr.Length - 1; i >= 0; i--)
             {
                 Console.Write($"{arr[i]} ");
             }
-            
+
         }
     }
+
+    // What can be improved:
+    // 1. Try to use var - e.g. rows 16, 17, 30
+    // 2. Try to use int.TryParse instead of Parse
+    // 3. It's enough to just use quotation marks i.e. "", string interpolation is not used - row 23
+    // 4. Articles in names are not needed - ReverseArray instead of ReverseAnArray
+    // 5. You could have used randomizer to populate an array
+    // 6. Try to format your code at the end of your work with the file using VS command - ctrl+K, ctrl+F
+    // 7. Be attentive to the task problem i.e. "to reverse array consisting of natural numbers".
+    // This means that we should store the reversed array to some variable
 }
