@@ -12,7 +12,7 @@ namespace TasksOOP
         string surname;
         string dateOfBirth;
         int grade;
-        int marks;
+        int marks;  
 
         public Student (string name, string surname,string dateOfBirth, int grade, int marks)
         {
