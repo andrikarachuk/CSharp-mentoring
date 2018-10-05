@@ -24,7 +24,7 @@ namespace Task_5
         private static int FindMax(int a, int b, int c)
         {
             int[] whereMax = new int[] {a, b, c};
-            int max = whereMax[0];
+            var max = whereMax[0];
             for (int i = 0; i < whereMax.Length-1; i++)
             {
                 max = (whereMax[i] > whereMax[i + 1]) ? whereMax[i] : whereMax[i + 1];
@@ -43,5 +43,5 @@ namespace Task_5
 
     // Some comments:
     // 1. Try to use var
-    // 2. In your algorithm in FindMax method it's enough to start "for" loop with i=1
+    // 2. In your algorithm in FindMax method it's enough to start "for" loop with i=1 -> don't understand what to do 
 }

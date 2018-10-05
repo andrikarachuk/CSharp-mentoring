@@ -13,19 +13,19 @@ namespace Task_10
             Console.Write("Write how long should be an array: ");
             var x = Convert.ToInt32(Console.ReadLine());
 
-            int[] arr = new int[x];
+            var arr = new int[x];
             for (int i = 0; i < arr.Length; i++)
             {
                 Console.Write($"Enter {i} element of array: ");
                 arr[i] = int.Parse(Console.ReadLine());
             }
 
-            Console.Write($"Reversed array is: ");
-            ReverseAnArray(arr);
+            Console.Write("Reversed array is: ");
+            ReverseArray(arr);
 
             Console.ReadKey();
         }
-        private static void ReverseAnArray(int[] arr)
+        private static void ReverseArray(int[] arr)
         {
             for (int i = arr.Length - 1; i >= 0; i--)
             {

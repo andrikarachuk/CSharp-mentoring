@@ -10,9 +10,7 @@ namespace Task_6
     {
         static void Main(string[] args)
         {
-        
-
-        Console.WriteLine("Enter you Marks in three subject to find wheather you're eleigible for admission");
+            Console.WriteLine("Enter you Marks in three subject to find wheather you're eleigible for admission");
             Console.Write("Enter Marks in Maths: ");
             var math = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter Marks in Phy: ");

@@ -15,8 +15,8 @@ namespace Task_4
             Console.Write("Enter second digit: ");
             var b = Convert.ToInt32(Console.ReadLine());
 
-            bool result = ((a + b) % 2 == 0) ? true : false;
-            Console.ReadKey(result);
+            bool result = ((a + b) % 2 == 0);
+            Console.WriteLine(result);
             Console.ReadKey();
         }
 

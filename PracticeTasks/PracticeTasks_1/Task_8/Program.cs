@@ -20,7 +20,7 @@ namespace Task_8
                 arr[i] = int.Parse(Console.ReadLine());
             }
 
-            int sum = 0;
+            var sum = 0;
             for (int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
