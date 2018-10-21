@@ -12,7 +12,7 @@ namespace TasksOOP
         string surname;
         string dateOfBirth;
         int grade;
-        int marks;
+        //int marks;  
 
         public Student (string name, string surname,string dateOfBirth, int grade, int marks)
         {
@@ -20,7 +20,7 @@ namespace TasksOOP
             this.surname = surname;
             this.dateOfBirth = dateOfBirth;
             this.grade = grade;
-            this.marks = marks;
+           // this.marks = marks;
         }
 
         int GetAverageMark()
