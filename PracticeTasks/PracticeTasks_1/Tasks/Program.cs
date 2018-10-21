@@ -17,8 +17,11 @@ namespace Tasks
             //Task2_plusForty task2 = new Task2_plusForty();
             //task2.printDate();
 
-            Task3_Compare2Dates task3 = new Task3_Compare2Dates();
-            task3.compareDates();
+            //Task3_Compare2Dates task3 = new Task3_Compare2Dates();
+            //task3.compareDates();
+
+            Task4_Difference task4 = new Task4_Difference();
+            task4.printDifference();
 
             Console.ReadKey();
         }
