@@ -46,6 +46,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Task1_DateTime.cs" />
+    <Compile Include="Task2_plusForty.cs" />
     <Compile Include="Tasks\reverseArray.cs" />
   </ItemGroup>
   <ItemGroup>

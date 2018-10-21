@@ -14,7 +14,7 @@ namespace Tasks
         public void PrintTime()
         {
             Console.WriteLine("Local time:");
-            Console.WriteLine("{0:MM'/'dd'/'yyyy}", localTime, utcTime);
+            Console.WriteLine("{0:MM'/'dd'/'yyyy}", localTime);
             Console.WriteLine(localTime.DayOfWeek + ", {0:dd MMM yyyy}", localTime);
             Console.WriteLine(localTime.DayOfWeek + ", {0:dd MMM yyyy hh:mm:ss}", localTime);
 
