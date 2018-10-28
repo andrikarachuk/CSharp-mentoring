@@ -49,6 +49,7 @@
     <Compile Include="Task2_plusForty.cs" />
     <Compile Include="Task3_Compare2Dates.cs" />
     <Compile Include="Task4_Difference.cs" />
+    <Compile Include="Task5_Rectangle.cs" />
     <Compile Include="Task6_Matrix.cs" />
     <Compile Include="Tasks\reverseArray.cs" />
   </ItemGroup>
