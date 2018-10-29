@@ -19,8 +19,8 @@ namespace Tasks
             //Task3_Compare2Dates task3 = new Task3_Compare2Dates();
             //task3.compareDates();
 
-            //Task4_Difference task4 = new Task4_Difference();
-            //task4.printDifference();
+            Task4_Difference task4 = new Task4_Difference();
+            task4.printDifference();
 
             //Task6_Matrix task6 = new Task6_Matrix();
             //task6.fillArray();
@@ -39,5 +39,8 @@ namespace Tasks
             Console.ReadKey();
         }
     }
-    
+
+    // Comments:
+    // 1. You can use var - rows 13, 16, 19, 22 etc. - var task1 = new Task1_DateTime();
+
 }

@@ -36,4 +36,9 @@ namespace Tasks
         }
                                
     }
+
+    // Comments:
+    // 1. It's better to make this class static and all its methods static. This class shouldn't have state i.e. fields array and random.
+    // 2. Please rename this class to Task6Matrix ()
+    
 }
