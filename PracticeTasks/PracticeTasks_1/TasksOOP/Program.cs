@@ -19,4 +19,7 @@ namespace TasksOOP
             Console.ReadKey();
         }
     }
+
+    // Comments:
+    // 1. You can use var - rows 13, 14
 }

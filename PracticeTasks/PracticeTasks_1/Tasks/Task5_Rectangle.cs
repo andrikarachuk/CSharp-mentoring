@@ -62,4 +62,15 @@ namespace Tasks
         }
         
     }
+
+    // Comments:
+    // 1. You don't follow the problem requirements. You have to have 4 versions of each method e.g. 
+    /* int Area(int side1, int side2)
+    int Area(ref int side1, ref int side2)
+    void Area(int side1, int side2, out int area)
+    void Area(params int[] sides, out int area) */
+    // This means that you should have a service static class with 12 static methods, without a state.
+    // 2. You don't need class fields sideA and sideB. Nevertheless, please remember that class field should always have access modifier private
+    // 3. Please rename the class to Task5Rectangle (camelcase notation)
+
 }
