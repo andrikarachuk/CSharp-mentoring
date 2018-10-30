@@ -38,4 +38,10 @@ namespace TasksOOP
 
         
     }
+
+    // Comments:
+    // 1. Why does your class inherit from SchoolSubjects?
+    // 2. Please specify access modifiers for defined fields
+    // 3. Install Resharper and follow its hints
+    // 4. Why do you store dateOfBirth as a string field? Maybe it's better to use DateTime type
 }
