@@ -1,46 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Tasks
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            //Task1_DateTime task1 = new Task1_DateTime();
-            //task1.PrintTime();
+            //Task1DateTime.PrintTime();
 
-            //Task2_plusForty task2 = new Task2_plusForty();
-            //task2.printDate();
+            //Task2PlusForty.PrintDate();
 
-            //Task3_Compare2Dates task3 = new Task3_Compare2Dates();
-            //task3.compareDates();
+            //Task3Compare2Dates.CompareDates(new DateTime(2000, 8, 16, 12, 00, 00), new DateTime(2000, 8, 16, 16, 00, 00));
 
-            Task4_Difference task4 = new Task4_Difference();
-            task4.printDifference();
+            //Task4Difference.Difference(new DateTime(2000, 1, 1, 00, 00, 00));
 
-            //Task6_Matrix task6 = new Task6_Matrix();
-            //task6.fillArray();
-            //task6.printArray();
+            //var task5 = new Task5Rectangle();
+            ////task5.calculateusual(); // <- start here to use usual usual method 
+            ////task5.calculateref(task5.sidea, task5.sideb, ref task5.area, ref task5.perimether, ref task5.diagonallength);
+            ////task5.calculateout(task5.sidea, task5.sideb, out task5.area, out task5.perimether, out task5.diagonallength);
+            ////task5.calculateparams(out task5.area, out task5.perimether, out task5.diagonallength, task5.sidea, task5.sideb);
 
-            //Task5_Rectangle task5 = new Task5_Rectangle();
-            //task5.CalculateUsual(); // <- Start here to use usual usual method 
-            ////task5.CalculateRef(task5.sideA, task5.sideB, ref task5.area, ref task5.perimether, ref task5.diagonalLength);
-            ////task5.CalculateOut(task5.sideA, task5.sideB, out task5.area, out task5.perimether, out task5.diagonalLength);
-            ////task5.CalculateParams(out task5.area, out task5.perimether, out task5.diagonalLength, task5.sideA, task5.sideB);
-            
+            //task5.SetSides(5, 10);
+            //task5.Area();
+            //task5.Perimeter();
+
             //task5.PrintResults();
 
-
+            Task6Matrix.FillArray();
+            Task6Matrix.PrintArray();
 
             Console.ReadKey();
         }
     }
 
     // Comments:
-    // 1. You can use var - rows 13, 16, 19, 22 etc. - var task1 = new Task1_DateTime();
+    // 1. You can use var - rows 13, 16, 19, 22 etc. - var task1 = new Task1_DateTime(); +
 
 }

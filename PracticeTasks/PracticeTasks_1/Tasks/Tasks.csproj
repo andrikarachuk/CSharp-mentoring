@@ -45,12 +45,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Task1_DateTime.cs" />
-    <Compile Include="Task2_plusForty.cs" />
-    <Compile Include="Task3_Compare2Dates.cs" />
-    <Compile Include="Task4_Difference.cs" />
-    <Compile Include="Task5_Rectangle.cs" />
-    <Compile Include="Task6_Matrix.cs" />
+    <Compile Include="Task1DateTime.cs" />
+    <Compile Include="Task2PlusForty.cs" />
+    <Compile Include="Task3Compare2Dates.cs" />
+    <Compile Include="Task4Difference.cs" />
+    <Compile Include="Task5Rectangle.cs" />
+    <Compile Include="Task6Matrix.cs" />
     <Compile Include="Tasks\reverseArray.cs" />
   </ItemGroup>
   <ItemGroup>
