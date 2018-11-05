@@ -26,8 +26,8 @@ namespace Tasks
 
             //task5.PrintResults();
 
-            Task6Matrix.FillArray();
-            Task6Matrix.PrintArray();
+            var arr = Task6Matrix.FillArray(4,4);
+            Task6Matrix.PrintArray(arr);
 
             Console.ReadKey();
         }

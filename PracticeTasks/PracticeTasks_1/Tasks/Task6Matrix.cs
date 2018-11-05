@@ -18,7 +18,7 @@ namespace Tasks
             }
         }
 
-        public static void PrintArray(params int[] array)
+        public static void PrintArray(int[,] array)
         {
             for (int i = 0; i < array.GetLength(0); i++)
             {

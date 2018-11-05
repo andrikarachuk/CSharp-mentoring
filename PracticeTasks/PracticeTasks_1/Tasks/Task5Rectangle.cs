@@ -4,8 +4,8 @@ namespace Tasks
 {
     public class Task5Rectangle
     {
-        private double _sideA;
-        private double _sideB;
+        private double _sideA; // fields redundant
+        private double _sideB; // pass parameters in methods 
 
         public void SetSides(double sideA, double sideB)
         {
