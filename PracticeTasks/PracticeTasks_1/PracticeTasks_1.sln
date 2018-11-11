@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TasksBasic", "TasksBasic", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksOOP", "TasksOOP\TasksOOP.csproj", "{5CFE0B69-1173-4282-9106-9C1C89B9962B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectangleTask5", "RectangleTask5\RectangleTask5.csproj", "{9B969540-4A6D-48BF-AE7F-887DC6FDBC90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{5CFE0B69-1173-4282-9106-9C1C89B9962B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CFE0B69-1173-4282-9106-9C1C89B9962B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CFE0B69-1173-4282-9106-9C1C89B9962B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B969540-4A6D-48BF-AE7F-887DC6FDBC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B969540-4A6D-48BF-AE7F-887DC6FDBC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B969540-4A6D-48BF-AE7F-887DC6FDBC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B969540-4A6D-48BF-AE7F-887DC6FDBC90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

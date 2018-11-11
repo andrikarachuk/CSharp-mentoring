@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{242EB930-12A3-4717-A31D-8BDD5E0C3B4B}</ProjectGuid>
+    <ProjectGuid>{9B969540-4A6D-48BF-AE7F-887DC6FDBC90}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Tasks</RootNamespace>
-    <AssemblyName>Tasks</AssemblyName>
+    <RootNamespace>RectangleTask5</RootNamespace>
+    <AssemblyName>RectangleTask5</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,12 +45,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Task1DateTime.cs" />
-    <Compile Include="Task2PlusForty.cs" />
-    <Compile Include="Task3Compare2Dates.cs" />
-    <Compile Include="Task4Difference.cs" />
-    <Compile Include="Task6Matrix.cs" />
-    <Compile Include="Tasks\reverseArray.cs" />
+    <Compile Include="Task5Rectangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

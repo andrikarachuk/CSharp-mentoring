@@ -20,14 +20,8 @@ namespace Tasks
             ////task5.calculateout(task5.sidea, task5.sideb, out task5.area, out task5.perimether, out task5.diagonallength);
             ////task5.calculateparams(out task5.area, out task5.perimether, out task5.diagonallength, task5.sidea, task5.sideb);
 
-            //task5.SetSides(5, 10);
-            //task5.Area();
-            //task5.Perimeter();
-
-            //task5.PrintResults();
-
-            var array = Task6Matrix.FillArray(3,3);
-            Task6Matrix.PrintArray(array);
+            //var array = Task6Matrix.FillArray(3,3);
+            //Task6Matrix.PrintArray(array);
 
             Console.ReadKey();
         }
