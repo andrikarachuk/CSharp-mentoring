@@ -51,6 +51,7 @@
     <Compile Include="Task4Difference.cs" />
     <Compile Include="Task6Matrix.cs" />
     <Compile Include="Task7MatrixSumProductTranspose.cs" />
+    <Compile Include="Task8StructureRectangle.cs" />
     <Compile Include="Tasks\reverseArray.cs" />
   </ItemGroup>
   <ItemGroup>
