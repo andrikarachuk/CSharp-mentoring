@@ -23,6 +23,20 @@ namespace Tasks
             //var array = Task6Matrix.FillArray(3,3);
             //Task6Matrix.PrintArray(array);
 
+            var array1 = Task7MatrixSumProductTranspose.FillArray(3, 3);
+            var array2 = Task7MatrixSumProductTranspose.FillArray(3, 3);
+
+            var arraySum = Task7MatrixSumProductTranspose.SumArrays(array1, array2);
+            Task7MatrixSumProductTranspose.PrintArray(arraySum);
+            Console.WriteLine();
+
+            var arrayProduct = Task7MatrixSumProductTranspose.ProductArrays(array1, array2);
+            Task7MatrixSumProductTranspose.PrintArray(arrayProduct);
+            Console.WriteLine();
+
+            var arrayTranspose = Task7MatrixSumProductTranspose.TransposeArray(arrayProduct);
+            Task7MatrixSumProductTranspose.PrintArray(arrayTranspose);
+
             Console.ReadKey();
         }
     }

@@ -7,7 +7,7 @@ namespace Tasks
         public static int[,] FillArray(int n1, int n2)
         {
          Random random = new Random();
-         int[,] array = new int[n1, n2];
+         var array = new int[n1, n2];
 
             for (var i = 0; i < array.GetLength(0); i++)
             {

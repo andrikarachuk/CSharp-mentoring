@@ -50,6 +50,7 @@
     <Compile Include="Task3Compare2Dates.cs" />
     <Compile Include="Task4Difference.cs" />
     <Compile Include="Task6Matrix.cs" />
+    <Compile Include="Task7MatrixSumProductTranspose.cs" />
     <Compile Include="Tasks\reverseArray.cs" />
   </ItemGroup>
   <ItemGroup>
