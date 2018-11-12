@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TasksOOP
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Student student1 = new Student("Han", "Solo", "1965/5/4", 5, 12);
-            Student student2 = new Student("Ben", "Kenobi", "1899/9/8", 15, 99);
+            var student1 = new Student("Han", "Solo", new DateTime(1965, 5 ,4), 5);
+            var student2 = new Student("Ben", "Kenobi", new DateTime(1899, 9, 8), 15);
+
+            student1.SetMarks();
 
             student1.DisplayStudentInfo();
             student2.DisplayStudentInfo();

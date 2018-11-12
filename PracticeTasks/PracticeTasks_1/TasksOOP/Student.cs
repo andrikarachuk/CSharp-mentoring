@@ -1,29 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TasksOOP
 {
-    public class Student : SchoolSubjects
+    public class Student
     {
-        string name;
-        string surname;
-        string dateOfBirth;
-        int grade;
-        //int marks;  
+        private string name;
+        private string surname;
+        private DateTime dateOfBirth;
+        private int grade;
+        private SchoolSubjects subjects;
+        
+        
+        public void SetMarks()
+        {
+            
+            for (var number = SchoolSubjects.Maths; number <= SchoolSubjects.EnglishLiterature; number++)
+            {
+                grade = 4;
+                number = (SchoolSubjects) grade;
+            }
+        }
 
-        public Student (string name, string surname,string dateOfBirth, int grade, int marks)
+        public Student (string name, string surname, DateTime dateOfBirth, int grade)
         {
             this.name = name;
             this.surname = surname;
             this.dateOfBirth = dateOfBirth;
             this.grade = grade;
-           // this.marks = marks;
         }
 
-        int GetAverageMark()
+        internal int GetAverageMark()
         {
             int avgMark = 0;
             return avgMark;
