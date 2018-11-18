@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TasksOOP
+﻿namespace TasksOOP
 {
     public enum SchoolSubjects
     {
-        Maths = 10,
-        Physics = 11,
-        Chemistry = 5,
-        Biology = 7,
-        EnglishLiterature = 11  
+        Maths,
+        Physics,
+        Chemistry,
+        Biology,
+        Literature  
     }
 }
 

@@ -8,18 +8,8 @@ namespace TasksOOP
         private string surname;
         private DateTime dateOfBirth;
         private int grade;
-        private SchoolSubjects subjects;
-        
-        
-        public void SetMarks()
-        {
-            
-            for (var number = SchoolSubjects.Maths; number <= SchoolSubjects.EnglishLiterature; number++)
-            {
-                grade = 4;
-                number = (SchoolSubjects) grade;
-            }
-        }
+        private int _averageMark;
+        public StudentSubjectMarks[] SubjectMarks;
 
         public Student (string name, string surname, DateTime dateOfBirth, int grade)
         {
@@ -29,17 +19,29 @@ namespace TasksOOP
             this.grade = grade;
         }
 
-        internal int GetAverageMark()
+        public void SetMarks(StudentSubjectMarks[] subjectMarks)
         {
-            int avgMark = 0;
-            return avgMark;
+            SubjectMarks = subjectMarks;
+            GetAverageMark();
+        }
+
+        public int GetAverageMark()
+        {
+            for (int i = 0; i < SubjectMarks.GetLength(0); i++)
+            {
+                _averageMark += SubjectMarks[i].GetSubjectMark();
+            }
+
+            return _averageMark = _averageMark / SubjectMarks.GetLength(0);
         }
 
         public void DisplayStudentInfo()
         {
-            Console.WriteLine($"Student {name} {surname} Info: \n" +
+            Console.WriteLine("Student Info: \n" +
+                $"Name {name} {surname} \n"   +
                 $"Date Of Birth {dateOfBirth}\n" +
-                $"Grade {grade}\n");
+                $"Grade {grade}\n" +
+                $"Average Mark {_averageMark}" + "\n");
         }
 
         
