@@ -33,5 +33,10 @@ namespace Tasks
 
         // Questions:
         // 1. Why do you create variable localTime as static and utcTime as usual field? It doesn't make a lot of sense creating a static private field. +Resolved
+
+        // Additional comments:
+        // 1. Please specify access modifiers for all class members and the class itself
+        // 2. Be attentive to modifiers order i.e. row 10 => "public static" instead of "static public"
+        // 3. For this task it's not enough to have localTime and utcTime stored as local variables of PrintTime method
     }
 }

@@ -4,9 +4,10 @@ namespace Tasks
 {
     static class Task7MatrixSumProductTranspose
     {
+        static Random random = new Random();
+
         public static int[,] FillArray(int n1, int n2)
         {
-            Random random = new Random();
             var array = new int[n1, n2];
 
             for (var i = 0; i < array.GetLength(0); i++)
@@ -78,3 +79,7 @@ namespace Tasks
         }
     }
 }
+
+// Comments:
+// 1. You could have reused FillArray and PrintArray methods from another static class. You are violating DRY principle :) - Don't repeat yourself
+// 2. There is a bug in TransposeArray method, currently this method will only be able to transpose a matrix with equal dimensions

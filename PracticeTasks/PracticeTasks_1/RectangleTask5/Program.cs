@@ -36,3 +36,7 @@ namespace RectangleTask5
         }
     }
 }
+
+// Comments:
+// 1. Please rename var sidesDoubles to e.g. sides (see comment for details inside Task5Rectangle class), row 29
+

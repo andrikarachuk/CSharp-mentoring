@@ -23,3 +23,12 @@ namespace Tasks
         }
     } 
 }
+
+// Comments:
+// 1. Resharper hints that sideA and sideB fields can be made readonly.
+// 2. Please create area and perimeter as public properties of Rectangle class.
+// It's a bad practice to perform something except simple assignments in constructor.
+// So, please move area and perimeter calculation to corresponding Area and Perimeter properties.
+// 3. I am curious why do you have your constructor internal?:)
+// 4. It's better to define one type per file and name the file correpondingly i.e. Rename Task8StructureRectangle to Rectangle
+

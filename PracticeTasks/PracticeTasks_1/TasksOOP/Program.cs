@@ -13,7 +13,7 @@ namespace TasksOOP
                 new StudentSubjectMarks(SchoolSubjects.Biology, 2),
                 new StudentSubjectMarks(SchoolSubjects.Maths, 3),
                 new StudentSubjectMarks(SchoolSubjects.Chemistry, 4),
-                new StudentSubjectMarks(SchoolSubjects.Physics, 5),
+                new StudentSubjectMarks(SchoolSubjects.Physics, 4),
                 new StudentSubjectMarks(SchoolSubjects.Literature, 1)
             });
 
@@ -33,5 +33,5 @@ namespace TasksOOP
     }
 
     // Comments:
-    // 1. You can use var - rows 13, 14
+    // 1. You can use var - rows 13, 14 +
 }

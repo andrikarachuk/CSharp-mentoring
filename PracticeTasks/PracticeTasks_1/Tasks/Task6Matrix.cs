@@ -43,5 +43,14 @@ namespace Tasks
     // 7. Inside a for loop condition you can also use var +
     // 8. According to the problem definition you have to create "a NxN matrix" i.e. you can't hardcode matrix to [4, 4] dimensions +
 
+    // Additional comments:
+    // 1. Be attentive to rows alignment, rows 9 and 10
+    // 2. You can name FillArray method parameters - dimension1 and dimension2 - just a suggestion :)
+    // 3. You can use var - row 9
+
+    // !!!
+    // 1. Please discard my comment 3. 
+    // If you move random field to FillArray method, then when you use FillArray method multiple times, you get the same matrix every time :)
+
 
 }
