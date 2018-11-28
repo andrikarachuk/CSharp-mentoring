@@ -25,4 +25,8 @@ namespace Tasks
 
     // Problems:
     // 1. The logic that you implement is better to put inside the method, not in class fields +
+
+    // Additional comments:
+    // 1. You can move "CurrentTime" field to "Difference" method for current task. 
+    // 2. Method names should describe an action which method implements e.g. "CalculateDateDifference" instead of "Difference"
 }

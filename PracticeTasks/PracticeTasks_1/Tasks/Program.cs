@@ -23,8 +23,11 @@ namespace Tasks
             //var array = Task6Matrix.FillArray(3,3);
             //Task6Matrix.PrintArray(array);
 
-            //var array1 = Task7MatrixSumProductTranspose.FillArray(3, 3);
+            //var array1 = Task7MatrixSumProductTranspose.FillArray(3, 2);
+            //Task7MatrixSumProductTranspose.PrintArray(array1);
+
             //var array2 = Task7MatrixSumProductTranspose.FillArray(3, 3);
+            //Task7MatrixSumProductTranspose.PrintArray(array2);
 
             //var arraySum = Task7MatrixSumProductTranspose.SumArrays(array1, array2);
             //Task7MatrixSumProductTranspose.PrintArray(arraySum);
@@ -34,7 +37,7 @@ namespace Tasks
             //Task7MatrixSumProductTranspose.PrintArray(arrayProduct);
             //Console.WriteLine();
 
-            //var arrayTranspose = Task7MatrixSumProductTranspose.TransposeArray(arrayProduct);
+            //var arrayTranspose = Task7MatrixSumProductTranspose.TransposeArray(array1);
             //Task7MatrixSumProductTranspose.PrintArray(arrayTranspose);
 
             Rectangle rectangle = new Rectangle(5, 10);

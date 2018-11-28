@@ -86,5 +86,13 @@ namespace RectangleTask5
     // This means that you should have a service static class with 12 static methods, without a state. +
     // 2. You don't need class fields sideA and sideB. Nevertheless, please remember that class field should always have access modifier private +
     // 3. Please rename the class to Task5Rectangle (camelcase notation) +
+
+    // Additional comments:
+    // 1. You don't need static private fields for this task. Methods without "out" parameters should return calculated values (area, perimeter or diagonal), 
+    // they don't have to store these calculated values in static fields.
+    // 2. It doesn't make sense that in the first "double Area(int sideA, int sideB)" Area method, you have input and output parameters of different types. Please align them.
+    // 3. Please rename params parameter "sidesDoubles" to e.g. "sides". It's a bad idea to specify types in variable/parameter/field/properties etc names.
+    // 4. Please change method signature "void DiagonalLength(double sideA, double sideB)" to "double DiagonalLength(double sideA, double sideB)"
+    // 5. PrintResults method is not needed in this class, you can move it to Program.
 }
 
